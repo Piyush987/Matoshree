@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <h5>The Golden Age</h5>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="social.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+                
+    <div class="register">
+        <form method="post" action="#">
+            <h2 style="color: white">Sign Up</h2><br>
+                <label>Full name</label><br>
+                <input type="text" name="Full_name" id="fnm"><br>
+                <label>Gender(M/F)</label><br>
+                <input type="text" name="Gender" id="gndr">
+                <label>Name Of Ward</label><br>
+                <input type="text" name="ward" id="nmw"><br>
+                <label>Permanent Address</label><br>
+                <input type="text" name="address"id="pma"><br>
+                <label>Email</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label>Contact no.</label><br>
+                <input type="number" name="password" id="cno"><br>
+
+
+
+                <br>
+
+
+
+
+                <button id="submit_btn" onclick="storeData()">Submit</button><br>
+        </form>
+
+
+    </div>
+    <div class="footer">
+        <footer>
+            <h3>Symbiosis Institute of Technology | S.I.T.            2018</h3>
+        </footer>
+    </div>
+</div>
+
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-firestore.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyChi6krQw6PLxmFSCpuTf0sB5A5L6UhKJs",
+        authDomain: "goldenage-ff197.firebaseapp.com",
+        databaseURL: "https://goldenage-ff197.firebaseio.com",
+        projectId: "goldenage-ff197",
+        storageBucket: "goldenage-ff197.appspot.com",
+        messagingSenderId: "167545040947"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
